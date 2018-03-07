@@ -2,6 +2,7 @@ package com.example.mahadi.frgmtandrcycle;
 
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TableLayout;
@@ -24,11 +25,20 @@ public class MainActivity extends AppCompatActivity {
         viewPageAdapter = new ViewPageAdapter(getSupportFragmentManager());
 
    //     Add Fragment
-        viewPageAdapter.AddFrmt(new Frmt_call(),"Call");
-        viewPageAdapter.AddFrmt(new FrmtContact(),"Contact");
-        viewPageAdapter.AddFrmt(new Frmt_fav(),"Favorite");
+        viewPageAdapter.AddFrmt(new Frmt_call(),"");
+        viewPageAdapter.AddFrmt(new FrmtContact(),"");
+        viewPageAdapter.AddFrmt(new Frmt_fav(),"");
 
         viewPager.setAdapter(viewPageAdapter);
         tabLayout.setupWithViewPager(viewPager);
+
+        tabLayout.getTabAt(0).setIcon(R.drawable.ic_call_black_24dp);
+        tabLayout.getTabAt(1).setIcon(R.drawable.ic_group_black_24dp);
+        tabLayout.getTabAt(2).setIcon(R.drawable.ic_favorite_black_24dp);
+
+        //Remove ActionBar Shadow
+
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setElevation(0);
     }
 }
