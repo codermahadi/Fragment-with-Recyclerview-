@@ -50,5 +50,13 @@ public class FrmtContact extends Fragment {
         listCont.add(new Contact("Mahadi Hasan","01717677540",R.drawable.ic_launcher_background));
         listCont.add(new Contact("Mahadi Hasan","01717677540",R.drawable.ic_launcher_background));
         listCont.add(new Contact("Mahadi Hasan","01717677540",R.drawable.ic_launcher_background));
+        listCont.add(new Contact("Mahadi Hasan","01717677540",R.drawable.ic_launcher_background));
+        listCont.add(new Contact("Mahadi Hasan","01717677540",R.drawable.ic_launcher_background));
+        listCont.add(new Contact("Mahadi Hasan","01717677540",R.drawable.ic_launcher_background));
+        listCont.add(new Contact("Mahadi Hasan","01717677540",R.drawable.ic_launcher_background));
+        listCont.add(new Contact("Mahadi Hasan","01717677540",R.drawable.ic_launcher_background));
+        listCont.add(new Contact("Mahadi Hasan","01717677540",R.drawable.ic_launcher_background));
+        listCont.add(new Contact("Mahadi Hasan","01717677540",R.drawable.ic_launcher_background));
+        listCont.add(new Contact("Mahadi Hasan","01717677540",R.drawable.ic_launcher_background));
     }
 }

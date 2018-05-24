@@ -6,9 +6,13 @@ package com.example.mahadi.frgmtandrcycle;
 
 public class Contact {
 
-     private String name;
+    private String name;
     private String phn;
     private int photo;
+
+    public Contact() {
+
+    }
 
     public Contact(String name, String phn, int photo) {
         this.name = name;

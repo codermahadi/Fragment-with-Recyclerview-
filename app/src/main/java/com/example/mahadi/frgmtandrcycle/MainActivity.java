@@ -28,6 +28,9 @@ public class MainActivity extends AppCompatActivity {
         viewPageAdapter.AddFrmt(new Frmt_call(),"");
         viewPageAdapter.AddFrmt(new FrmtContact(),"");
         viewPageAdapter.AddFrmt(new Frmt_fav(),"");
+        viewPageAdapter.AddFrmt(new Frmt_call(), "");
+        viewPageAdapter.AddFrmt(new FrmtContact(), "");
+        viewPageAdapter.AddFrmt(new Frmt_fav(), "");
 
         viewPager.setAdapter(viewPageAdapter);
         tabLayout.setupWithViewPager(viewPager);
@@ -35,6 +38,9 @@ public class MainActivity extends AppCompatActivity {
         tabLayout.getTabAt(0).setIcon(R.drawable.ic_call_black_24dp);
         tabLayout.getTabAt(1).setIcon(R.drawable.ic_group_black_24dp);
         tabLayout.getTabAt(2).setIcon(R.drawable.ic_favorite_black_24dp);
+        tabLayout.getTabAt(3).setIcon(R.drawable.ic_call_black_24dp);
+        tabLayout.getTabAt(4).setIcon(R.drawable.ic_group_black_24dp);
+        tabLayout.getTabAt(5).setIcon(R.drawable.ic_favorite_black_24dp);
 
         //Remove ActionBar Shadow
 
